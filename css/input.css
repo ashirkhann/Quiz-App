@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+
+.btn{
+    @apply my-2 px-4 py-2 border w-full rounded-md text-left hover:bg-slate-800;
+}
+@tailwind utilities;

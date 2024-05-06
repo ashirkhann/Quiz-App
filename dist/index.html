@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrF7i8PnTJhKLZjN4Js1qK6-tXPtM-HAgEbvNmUIJ-pQ&s" type="image/x-icon">
+</head>
+
+<body>
+    <div class="flex items-center h-screen bg-slate-950">
+        <div class="container flex flex-col px-5 mx-auto md:w-[35%] w-[80%]  bg-blue-950 text-white">
+            <section class="heading my-4">
+                <h1 class="text-center font-bold text-2xl">Quiz App</h1>
+            </section>
+
+            <section class="progress-bar-container my-3">
+                <div class="w-full h-8 relative border rounded-lg text-center flex items-center ">
+                    <span id="countdown" class="absolute -translate-x-1/2 left-1/2 font-bold"></span>
+                    <div
+                        id="progress-bar" class="w-[100%] h-full rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition-all ease-linear duration-1000">
+                    </div>
+                </div>
+            </section>
+
+            <section class="question-container">
+                <h2 id="questionNo" class="text-xl font-bold text-slate-400">Question 3/5</h2>
+                <h2 id="question" class="text-lg font-semibold">Which is the biggest city in the world</h2>
+            </section>
+
+            <section id="options" class="my-4 font-bold">
+                <button class="btn">Karachi</button>
+                <button class="btn">Karachi</button>
+                <button class="btn">Karachi</button>
+                <button class="btn">Karachi</button>
+            </section>
+
+            <section class="buttons mb-4">
+                <button id='submit' disabled class="p-2 bg-blue-900 font-bold w-full rounded-md ">Submit</button>
+                <button id='next' class="p-2 bg-blue-600 font-bold w-full rounded-md hidden">Next</button>
+            </section>
+            
+            <section id="score" class="text-center font-bold text-2xl hidden mb-10"></section>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
